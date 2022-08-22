@@ -1,0 +1,85 @@
+.quesdisp {
+table-layout:auto;
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.quesdisp tr {
+  border: 1px solid #D9E4E6;
+}
+.quesdisp tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.quesdisp th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.quesdisp th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.quesdisp th:nth-child(2) {
+  display: table-cell;
+}
+.quesdisp th:nth-child(2) span {
+  display: none;
+}
+.quesdisp th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .quesdisp th:nth-child(2) span {
+    display: block;
+  }
+  .quesdisp th:nth-child(2):after {
+    display: none;
+  }
+}
+.quesdisp td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.quesdisp td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .quesdisp td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.quesdisp th, .quesdisp td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .quesdisp th, .quesdisp td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167F92;
+}
