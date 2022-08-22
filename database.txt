@@ -1,0 +1,6 @@
+create table smartc(uid int not null auto_increment,uname varchar(20) not null,address varchar(30) not null,pincode int not null,email varchar(30) not null,phone_num varchar(11) not null,dob date,gender varchar(10),pass varchar(20) not null,primary key(uid));
+
+-------------------------------------------------------------------------------------------------------------
+-------------------------help table---------------------------------------------------------------------
+
+create table help(uid int not null,problem varchar(100),foreign key(uid) references smartc(uid));

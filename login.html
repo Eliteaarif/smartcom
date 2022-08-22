@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form</title>        
+        
+  <meta charset="utf-8">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">            
+        
+        <div class="container">            
+            <header>
+                <h1>Login Or Register </h1>
+				
+            </header>
+            <section>				
+                <div id="container_demo" >                   
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+
+                        <div id="login" class="animate form">
+                         <form  action="userlog.php" method="post" autocomplete="on"> 
+                          <h1>user login</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="uid" name="uid" required="required" type="text" placeholder="Username"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="upas" name="upas" required="required" type="password" placeholder="Password" /> 
+                                </p>
+                                
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" /> 
+		</p>
+                                <p class="change_link">
+								<a href="../" class="to_register"> Go back To Home </a>
+									Not a member yet ?
+									<a href="#toregister" class="to_register">Register</a>
+								</p>
+                            </form>
+                        </div>
+                    <div id="register" class="animate form">
+                        <form  action="userins.php" method="post" autocomplete="on"> 
+                               <h1>user Sign up / Register</h1> 
+                            <p> 
+                                <label for="namesignup" class="uname" data-icon="u">YourName</label>
+                                <input id="namesignup" name="nm" required="required" type="text" placeholder="Name" />
+                            </p>
+                            <p> 
+                                <label for="userid" class="youmail" data-icon="e" > Your email</label>
+                                <input id="mail" name="mail" required="required" type="text" placeholder="username"/> 
+                            </p>
+<p> 
+                                <label for="userid" class="youmail" > phone n.o</label>
+                                <input id="phno" name="phno" required="required" type="digit" 
+placeholder="phone number"/> 
+                            </p>
+    
+                             
+
+    <p> 
+                                <label for="address" class="subname">Address</label>                                
+                                <input id="address" name="address" required="required" type="text" placeholder="address"/> 
+                            </p>
+                            <p> 
+                                <label for="pincode" class="subname">Pincode</label>                                
+                                <input id="pincode" name="pincode" required="required" type="number" placeholder="pincode"/> 
+                            </p>
+    <p> 
+                                <label for="dob" class="dob" data-icon="D" > Date Of Birth</label>
+                                <input id="dob" name="dob" required="required" type="date" placeholder="Date of Birth"/> 
+                            </p>
+    <p> 
+                                <label for="gen" class="gen" data-icon="">Gender </label>
+                                <input id="g" name="g" type="radio" value="Male"/>Male <input id="gen" name="g"  type="radio" value="Female"/>Female
+                            </p>
+                            <p> 
+                                <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                <input id="pass1" name="ps1" required="required" type="password" placeholder="Password"/>
+                            </p>
+                            <p> 
+                                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                <input id="pass2" name="ps2" required="required" type="password" placeholder="Confirm  Password"/>
+                            </p>
+                            <p class="signin button"> 
+                                <input type="submit" value="Sign up"/> 
+                            </p>
+                            <p class="change_link"> 								
+                                Already a member ?
+                                <a href="#tologin" class="to_register"> Go and log in </a>
+                            </p>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>  
+        </section>
+    </div>
+
+</body>
